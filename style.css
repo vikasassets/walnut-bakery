@@ -669,6 +669,7 @@ section {
   .nav-container {
     width: 95%;
     padding: 1rem 1.5rem;
+    justify-content: flex-end;
   }
 
   footer {
