@@ -2198,6 +2198,30 @@ section {
     min-width: 44px;
     min-height: 44px;
   }
+
+  /* 5. Mobile Hero CTAs */
+  .hero-ctas {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    width: 100% !important;
+  }
+
+  .hero-ctas .btn-primary,
+  .hero-ctas .btn-secondary {
+    width: 100% !important;
+    text-align: center;
+    padding: 1.2rem !important;
+    border-radius: 50px !important;
+    font-size: 1rem !important;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-ctas .btn-primary {
+    background: var(--champagne-gold) !important;
+    color: white !important;
+    box-shadow: 0 10px 20px rgba(194, 97, 13, 0.3) !important;
+  }
 }
 
 @media (max-width: 480px) {
