@@ -59,10 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (closeMenuBtn) {
         closeMenuBtn.addEventListener('click', () => {
-            menuOverlay.classList.remove('active');
+            if (menuOverlay) menuOverlay.classList.remove('active');
             document.body.style.overflow = '';
         });
     }
+
+    const closeMenuLinks = document.querySelectorAll('.close-menu-link');
+    closeMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (menuOverlay) menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
 
     // --- ORDER MODAL LOGIC ---
     const orderModal = document.getElementById('order-modal');
